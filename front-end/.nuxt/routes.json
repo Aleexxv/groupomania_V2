@@ -1,0 +1,50 @@
+[
+  {
+    "name": "blogText",
+    "path": "/blogText",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogText\\\\index.vue",
+    "chunkName": "pages/blogText/index"
+  },
+  {
+    "name": "blogVideo",
+    "path": "/blogVideo",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogVideo\\\\index.vue",
+    "chunkName": "pages/blogVideo/index"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index"
+  },
+  {
+    "name": "profil",
+    "path": "/profil",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\profil\\\\index.vue",
+    "chunkName": "pages/profil/index"
+  },
+  {
+    "name": "login-admin",
+    "path": "/login/admin",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\login\\\\admin\\\\index.vue",
+    "chunkName": "pages/login/admin/index"
+  },
+  {
+    "name": "profil-updateProfil",
+    "path": "/profil/updateProfil",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\profil\\\\updateProfil.vue",
+    "chunkName": "pages/profil/updateProfil"
+  },
+  {
+    "name": "blogText-id",
+    "path": "/blogText/:id",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogText\\\\_id.vue",
+    "chunkName": "pages/blogText/_id"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
