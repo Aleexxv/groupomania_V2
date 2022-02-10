@@ -1,24 +1,31 @@
 const express = require('express');
-// const cors = require('cors');
 require('dotenv').config();
+const cors = require('cors');
 
+//DATABASE
 const db = require('./config/db');
+const User = require('./models/users');
+const Blog_texts = require('./models/Blog_Texts');
 
 db.authenticate()
     .then(() => console.log('Connexion à la base de donnée réussi !'))
     .catch(err => console.error('Connexion à la base de donnée échoué essai encore !', err));
 
-    //APP
-// CREATE APP AND USE
+(async () => {
+    try {
+        await User.sync ({ alter: true })
+        await Blog_texts.sync ({ alter: true })
+    } catch (error) {
+        console.error(error)
+    }
+})()
+
+//APP
 const app = express();
 app.use(express.json());
-// app.use(cors({
-//     credentials: true,
-//     origin : 'http://localhost:4000'
-// }));
+app.use(cors());
 
 // ROUTES
-// GET ALL BLOG_TEXTS
 const usersRoute = require('./routes/users');
 const blogTextsRoute = require('./routes/blogTexts');
 
@@ -30,6 +37,7 @@ app.use((req, res, next) => {
     next();
 });
 
+// USE ROUTES
 app.use('/api/users', usersRoute);
 app.use('/api/blogTexts', blogTextsRoute);
 

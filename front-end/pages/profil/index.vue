@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="profil">
 			<div>
-				<!-- <img src="https://i.pravatar.cc/300" alt=""> -->
+				<img src="https://i.pravatar.cc/300" alt="">
 					<h2>{{ user.firstName }} {{ user.lastName }}</h2>
 					<h3>{{ user.email }}</h3>
 				<p>Vous avez partagé {{ nbrLikeText }} publication</p>
@@ -46,6 +46,7 @@ export default {
 	data: () => ({
 		user: [],
 		texts: [],
+		id : '',
 		firstName: '',
 		lastName: '',
 		email: '',
@@ -57,9 +58,8 @@ export default {
 
 	async fetch() {
 		this.texts = await this.$axios.$get('http://localhost:4000/api/blogTexts')
-		// this.user = await this.$axios.$get('http://localhost:4000/api/users')
 	},
-	
+
 	methods: {
 		async postText() {
 			await this.$axios.$post('http://localhost:4000/api/blogTexts', {
@@ -72,7 +72,7 @@ export default {
 		},
 
 		async deleteText() {
-			await this.$axios.$delete(`http://localhost:4000/api/blogTexts/delete/${1}`)
+			await this.$axios.$delete(`http://localhost:4000/api/blogTexts/delete/${this.id}`)
 			.then(res => console.log(res))
 			.catch(err => console.log(err))
 		}

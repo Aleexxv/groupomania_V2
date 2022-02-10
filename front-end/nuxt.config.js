@@ -34,6 +34,7 @@ export default {
 
 	buildModules : [ 
 		'nuxt-gsap-module',
+		// '@nuxtjs/color-mode'
 	],
 
 	gsap : { 
@@ -56,34 +57,46 @@ export default {
 	// Axios module configuration: https://go.nuxtjs.dev/config-axios
 	axios: {
 		// See
-		baseURL: 'http://localhost:4000/api/',
+		baseURL: 'http://localhost:4000/api/users',
 	},
 
-	// router: {
-	// 	middleware: ['auth']
-	// },
+	router: {
+		middleware: ['auth']
+	},
 
 	auth: {
 		strategies: {
 			local: {
-				// token: {
-				// 	property: 'token',
-				// 	global: true,
-				// 	required: true,
-				// 	type: 'Bearer'
-				// },
-				// user: {
-				// 	property: 'user',
-				// // autoFetch: true
-				// },
 				endpoints: {
-					login: { url: '/users/login', method: 'post', nameProperty: 'token' },
-					logout: { url: '/users/logout', method: 'post' },
-					user: { url: '/users', method: 'get', nameProperty: 'user' },
-				}
+					login: { url: '/login', method: 'post', nameProperty: 'token' },
+					logout: { url: '/logout', method: 'post' },
+					user: { url: '/me', method: 'get', nameProperty: 'user' },
+				},
 			}
 		}
 	},
+
+	// auth: {
+	// 	strategies: {
+	// 		local: {
+	// 			token: {
+	// 				property: 'token',
+	// 				global: true,
+	// 				required: true,
+	// 				type: 'Bearer'
+	// 			},
+	// 			user: {
+	// 			property: 'user',
+	// 			// autoFetch: true
+	// 			},
+	// 			endpoints: {
+	// 			login: { url: '/login', method: 'post' },
+	// 			logout: { url: '/logout', method: 'post' },
+	// 			user: { url: '/user', method: 'get' }
+	// 			}
+	// 		}
+	// 	}
+	// },
 
 	fontawesome: {
 	},

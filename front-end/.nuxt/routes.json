@@ -3,48 +3,56 @@
     "name": "blogText",
     "path": "/blogText",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogText\\\\index.vue",
-    "chunkName": "pages/blogText/index"
+    "chunkName": "pages/blogText/index",
+    "_name": "_b3cc219c"
   },
   {
     "name": "blogVideo",
     "path": "/blogVideo",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogVideo\\\\index.vue",
-    "chunkName": "pages/blogVideo/index"
+    "chunkName": "pages/blogVideo/index",
+    "_name": "_a983c2cc"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\login\\\\index.vue",
-    "chunkName": "pages/login/index"
+    "chunkName": "pages/login/index",
+    "_name": "_d27c40ac"
   },
   {
     "name": "profil",
     "path": "/profil",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\profil\\\\index.vue",
-    "chunkName": "pages/profil/index"
+    "chunkName": "pages/profil/index",
+    "_name": "_d6021ef6"
   },
   {
     "name": "login-admin",
     "path": "/login/admin",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\login\\\\admin\\\\index.vue",
-    "chunkName": "pages/login/admin/index"
+    "chunkName": "pages/login/admin/index",
+    "_name": "_70d606fb"
   },
   {
     "name": "profil-updateProfil",
     "path": "/profil/updateProfil",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\profil\\\\updateProfil.vue",
-    "chunkName": "pages/profil/updateProfil"
+    "chunkName": "pages/profil/updateProfil",
+    "_name": "_6b95e3fc"
   },
   {
     "name": "blogText-id",
     "path": "/blogText/:id",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\blogText\\\\_id.vue",
-    "chunkName": "pages/blogText/_id"
+    "chunkName": "pages/blogText/_id",
+    "_name": "_555e161a"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\aveyl\\\\Desktop\\\\test\\\\groupomania\\\\front-end\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_51dd8ec1"
   }
 ]

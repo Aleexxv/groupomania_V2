@@ -10,10 +10,6 @@ const userModel = db.define('users', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    img: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     email: {
         type: DataTypes.STRING,
         allowNull: false,

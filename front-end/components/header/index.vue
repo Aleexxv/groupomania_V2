@@ -5,60 +5,63 @@
 		</div>
 		<div class="nologo">
 			<NuxtLink to="/profil">Profil</NuxtLink>
-			<button @click='logout()'>Déconnexion</button>
+			<button class="button" @click='logout()'>Déconnexion</button>
 		</div>
 	</div>
 </template>
 
 <script>
-export default {
 
-	
-	methods: {
-		logout() {
-			this.$axios.$post('/users/logout')
-			.then((res) => {
-				this.$router.push('/login')
-				console.log(res)
-			}).catch((err) => {
-				console.log(err)
-			});
+	export default {
+		methods: {
+			logout() {
+				this.$axios.$post('/logout')
+				.then((res) => {
+					this.$router.push('/login')
+					console.log(res)
+				}).catch((err) => {
+					console.log(err)
+				});
+			}
 		}
 	}
-
-}
+	
 </script>
 
 <style scoped>
 
-.content{
-	position: absolute;
-	top: 0%;
-	height: 3rem;
-	display: flex;
-	height: 5rem;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	background: var(--bg-secondary);
-}
+	.content{
+		position: absolute;
+		top: 0%;
+		height: 3rem;
+		display: flex;
+		height: 5rem;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		background: var(--bg-secondary);
+	}
 
-.nologo{
-	position: relative;
-	right: 4rem;
-}
+	.nologo{
+		position: relative;
+		right: 4rem;
+	}
 
-.CMP{
-	left: 90%;
-}
+	.CMP{
+		left: 90%;
+	}
 
-svg{
-	height: 2.5rem;
-	padding: 1.2rem 0;
-}
+	svg{
+		height: 2.5rem;
+		padding: 1.2rem 0;
+	}
 
-img{
-	position: absolute;
-}
+	img{
+		position: absolute;
+	}
 
+	.button{
+		left: 0%;
+		transform: translate(-0%, 0);
+	}
 </style>

@@ -3,7 +3,6 @@ const Blog_texts = require('../models/Blog_texts');
 exports.postBlogTexts = (req, res, next) => {
     (async () => {
         try {
-            await Blog_texts.sync ({ alter: true })
             const texts = Blog_texts.create({
                 title: req.body.title,
                 desc: req.body.desc,

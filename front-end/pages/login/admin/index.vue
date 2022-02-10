@@ -10,7 +10,7 @@
 				<input v-model="password" type="password" placeholder="Password">
 				<button class="button" @click="userLogin()">Connexion</button>
 			</form>
-		<colorModePicker class="CMPlog" />
+		<!-- <colorModePicker class="CMPlog" /> -->
 		</div>
 	</div>
 </template>

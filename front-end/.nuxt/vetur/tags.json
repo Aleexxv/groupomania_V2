@@ -1,5 +1,8 @@
 {
   "Header": {
     "description": "Auto imported from components/header/index.vue"
+  },
+  "ColorModePicker": {
+    "description": "Auto imported from components/colorModePicker/index.vue"
   }
 }

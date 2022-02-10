@@ -14,7 +14,7 @@ export default function (ctx, inject) {
 
   // Register strategies
   // local
-  $auth.registerStrategy('local', new scheme_3e2123be($auth, {"endpoints":{"login":{"url":"/users/login","method":"post","propertyName":"token","nameProperty":"token"},"logout":{"url":"/users/logout","method":"post"},"user":{"url":"/users","method":"get","propertyName":"user","nameProperty":"user"}},"_name":"local"}))
+  $auth.registerStrategy('local', new scheme_3e2123be($auth, {"endpoints":{"login":{"url":"/login","method":"post","propertyName":"token","nameProperty":"token"},"logout":{"url":"/logout","method":"post"},"user":{"url":"/me","method":"get","propertyName":"user","nameProperty":"user"}},"_name":"local"}))
 
   // Inject it to nuxt context as $auth
   inject('auth', $auth)

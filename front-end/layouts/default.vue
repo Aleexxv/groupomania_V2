@@ -1,6 +1,10 @@
 <template>
     <div>
-        <Header />
-        <Nuxt />
+        <div>
+            <Header />
+        </div>
+        <div>
+            <Nuxt />
+        </div>
     </div>
 </template>

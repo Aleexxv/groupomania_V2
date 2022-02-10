@@ -48,7 +48,6 @@
 		}
 	}
 
-
 	.gif{
 		pointer-events: none
 	}
