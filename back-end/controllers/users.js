@@ -61,7 +61,7 @@ exports.getOneUser = (req, res, next) => {
         try {
             const user = await User.findOne({
                 where: {
-                    id: 173,
+                    id: req.body.userId,
                 }
             });
             console.log('user :', user)
@@ -76,7 +76,7 @@ exports.logOut = (req, res, next) => {
     (async () => {
         User.findOne({
             where: {
-                id: 173,
+                id: req.body.userId,
             }
         });
         res.status(200).json({
